@@ -1,0 +1,33 @@
+---
+description: Rydar documentation evolution rules. Keeps the spec set in agreement with the code as features land.
+alwaysApply: true
+---
+
+# Rydar doc evolution
+
+This repo's documentation is the context layer the whole project is built from. It evolves with every change. A change that leaves a spec describing something that is no longer true is incomplete.
+
+## Before you start
+
+Read [README.md](../../README.md) for the doc map, then [PRODUCT.md](../../PRODUCT.md) and [docs/DOMAIN.md](../../docs/DOMAIN.md). Every other spec uses the domain model's vocabulary, so reading them first is what keeps a change from using the wrong words.
+
+Full working guide is [AGENTS.md](../../AGENTS.md).
+
+## Hard rules
+
+- Never invent a value marked `TBD`. Colors, fonts, spacing, zoom tiers, durations, deep link schemes, staleness windows. A task needing one is blocked on a decision. Say so.
+- Never fabricate a fare. No averaging across providers, no interpolation, no placeholder prices. A provider without a price shows a typed reason.
+- `core/` imports nothing from `platform/` or `app/`.
+- Never put a provider name in a conditional in feature code. It belongs in the registry in `core/providers`.
+
+## Before finishing any change
+
+1. Walk the doc impact table in [AGENTS.md](../../AGENTS.md) and update every doc your change contradicts.
+2. On each touched doc, bump `version`, set `updated`, and add a `## Changelog` line saying what changed. All three must agree.
+3. A new document must be added to the doc map in `README.md` in the same change.
+4. A choice that closed off an alternative needs an ADR in `docs/DECISIONS/`, from the template, listed in the ADR index.
+5. Run `node tools/check-docs.mjs`.
+
+## In your summary
+
+State which docs you updated and which you considered and deliberately left alone. A change that claims no doc impact should say why, because that is usually where a missed update hides.

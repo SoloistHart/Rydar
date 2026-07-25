@@ -106,7 +106,7 @@ Recorded so the eventual ADR has a starting point. None is chosen. Each is a rea
 
 **Device automation.** Driving the provider's own app in an emulator, which is what at least one comparable aggregator resorted to for providers with no web surface. Demonstrably works and does not scale. Recorded for completeness, not as a serious candidate.
 
-**Published fare matrices.** Computing an estimate from LTFRB rate structures and known base fares. Requires no connection at all and produces a genuinely useful figure for regulated metered tiers. It is also, strictly, Rydar inventing a price, which [PRODUCT.md](PRODUCT.md) forbids. If it is ever used it must be labeled unambiguously as a Rydar estimate rather than a provider quote, and it must never occupy a provider row.
+**Published fare matrices.** Computing an estimate from LTFRB rate structures and known base fares. Requires no connection at all and produces a genuinely useful figure for regulated metered tiers. It is also, strictly, Rydar inventing a price, which [../PRODUCT.md](../PRODUCT.md) forbids. If it is ever used it must be labeled unambiguously as a Rydar estimate rather than a provider quote, and it must never occupy a provider row.
 
 The likely answer is per provider rather than global, which is exactly why the port is per provider.
 

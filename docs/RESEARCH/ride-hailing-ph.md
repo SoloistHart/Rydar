@@ -8,7 +8,7 @@ owners: [rhohart-martel, vincent-perez]
 
 # Research. Philippine ride-hailing and comparable aggregators
 
-Findings gathered on 2026-07-26 to ground [../PRODUCT.md](../PRODUCT.md), [../PROVIDERS.md](../PROVIDERS.md), and [../CONNECT.md](../CONNECT.md). Nothing here is a decision. Where a figure appears it is a sourced observation at a point in time and it will drift, so treat any number as an order of magnitude rather than a constant to code against.
+Findings gathered on 2026-07-26 to ground [../../PRODUCT.md](../../PRODUCT.md), [../PROVIDERS.md](../PROVIDERS.md), and [../CONNECT.md](../CONNECT.md). Nothing here is a decision. Where a figure appears it is a sourced observation at a point in time and it will drift, so treat any number as an order of magnitude rather than a constant to code against.
 
 ## The market
 

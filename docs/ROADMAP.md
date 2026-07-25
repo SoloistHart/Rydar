@@ -48,7 +48,7 @@ The fake is the load-bearing artifact. It exercises more of the eventual UI than
 
 ## M4. Visual identity
 
-The identity session, filling every `TBD` in [DESIGN.md](DESIGN.md) in the order that document specifies, starting from the map style because everything else is constrained by it. One ADR for the token set.
+The identity session, filling every `TBD` in [../DESIGN.md](../DESIGN.md) in the order that document specifies, starting from the map style because everything else is constrained by it. One ADR for the token set.
 
 Done when `DESIGN.md` has no `TBD` in its color, type, spacing, elevation, or motion sections, the accent has been checked against all five provider brand colors for collision, and both themes are legible over the chosen map style.
 
